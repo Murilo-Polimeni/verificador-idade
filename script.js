@@ -97,7 +97,7 @@ function limparCampos() {
   nome.value = "";
 }
 
-function inserirNoLocalStorage(nome, sexo, idade) {
+function inserirNoLocalStorage(nome, idade, sexo) {
   const historicoArmazenado = localStorage.getItem("historico");
   let historico = [];
   if (historicoArmazenado) {
@@ -115,6 +115,8 @@ function inserirNoLocalStorage(nome, sexo, idade) {
 
 function exibirDados() {
   const historico = JSON.parse(localStorage.getItem("historico"));
+  for (let pessoa in historico) {
+  }
   historico.forEach(function (pessoa) {
     inserirLinha(pessoa.nome, pessoa.idade, pessoa.sexo);
   });
