@@ -16,7 +16,7 @@ header h1 {
   border: 1px solid black;
   border-radius: 20px;
 
-  width: 18em;
+  width: 600px;
 
   padding: 0.87em;
   font-size: 2em;
@@ -34,4 +34,15 @@ footer {
 .foto-pessoa {
   width: 7em;
   margin: 1em 5em;
+}
+
+.tabela-historico {
+  margin-top: 3em;
+  background: white;
+  width: 650px;
+}
+
+.tabela-historico th {
+  text-align: left;
+  background-color: rgb(238, 238, 238);
 }
